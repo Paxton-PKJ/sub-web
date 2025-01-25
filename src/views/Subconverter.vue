@@ -232,8 +232,23 @@ export default {
           Trojan: "trojan",
           Surge3: "surge&ver=3",
         },
-        backendOptions: [{ value: "https://convert.paxton.uk.eu.org/?token=mimaPKJ0903&" }],
+        backendOptions: [{ value: "https://convert.paxton.uk.eu.org/sub?token=mimaPKJ0903&" }],
         remoteConfig: [
+          {
+            label: "default",
+            options: [
+              {
+                label: "自用配置,随时修改,可能暂不可用",
+                value:
+                  "https://gist.githubusercontent.com/Paxton-PKJ/aeb80094ad9d5c56324200436fc4e6de/raw/paxton.ini"
+              },
+              {
+                label: "linemilia配置",
+                value:
+                  "https://raw.githubusercontent.com/kai-wei-kfuse/Linemilia_Proxy_Rule/refs/heads/main/linemilia.ini"
+              }
+            ]
+          },
           {
             label: "universal",
             options: [
